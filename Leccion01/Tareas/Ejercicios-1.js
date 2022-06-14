@@ -1,3 +1,4 @@
+//suma, resta, multipliacion
 var n1 = 12;
 var n2 = 2;
 var suma;
