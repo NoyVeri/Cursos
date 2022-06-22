@@ -6,6 +6,8 @@ mandar a imprimir un chale que mala onda
 
 let jefa = 'si';
 const jefe = 'no';
+const n_putaso = 32;
+let nivel_encabronada = 0;
 
 if(jefa == 'si'){
 console.log("preguntale a tu padre");
@@ -18,6 +20,9 @@ jefa = 'no';
 if(jefa != 'si'){
 console.log("con todo respeto pero, chingue su madre jefa");
 console.log("jefa: que dijiste chamaco cagado *le pega*");
+for(nivel_encabronada;nivel_encabronada >= n_putaso;nivel_encabronada++){
+    console.log("pum");
+}
 console.log("ya jefa no sea mamona ");
 }
     
