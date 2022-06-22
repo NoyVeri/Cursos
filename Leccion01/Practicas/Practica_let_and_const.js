@@ -5,7 +5,7 @@ mandar a imprimir un chale que mala onda
 */
 
 let jefa = 'si';
-const jefe = 'si';
+const jefe = 'no';
 
 if(jefa == 'si'){
 console.log("preguntale a tu padre");
@@ -24,6 +24,7 @@ console.log("ya jefa no sea mamona ");
 }else if (jefe != 'si'){
 
     console.log("chale que mala onda jefe");
+    console.log("no me resonge chamaco cagado");
 }
 
 }else if (jefa != 'si'){
