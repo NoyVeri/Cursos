@@ -12,8 +12,15 @@ console.log("preguntale a tu padre");
 console.log("*le pregunta xd*");
 
 if(jefe == 'si'){
-
-    console.log("siuuuuuuuu");
+console.log("dijo que si jefa");
+console.log("jefa: entonces no vas");
+jefa = 'no';
+if(jefa != 'si'){
+console.log("con todo respeto pero, chingue su madre jefa");
+console.log("jefa: que dijiste chamaco cagado *le pega*");
+console.log("ya jefa no sea mamona ");
+}
+    
 }else if (jefe != 'si'){
 
     console.log("chale que mala onda jefe");
