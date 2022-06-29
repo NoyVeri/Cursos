@@ -23,7 +23,7 @@ let fila3 = {
         c:7
         };
     
-        
+       
 console.log('(',fila1.x,fila1.y,fila1.z,'|',fila1.c,')',
 '(',fila2.x,fila2.y,fila2.z,'|',fila2.c,')','(',fila3.x,fila3.y,fila3.z,'|',fila3.c,')');
 
