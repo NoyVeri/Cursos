@@ -11,3 +11,11 @@ console.log( z );
 z = a * b;
 console.log( z );
 //operador de la divicion /
+z  = a / b;
+console.log( z );
+// operacion del residuo de la divicion % " es decir lo sobrante de la divicion"
+z = a % b;
+console.log(z);
+//operacion del exponente **
+z = a ** b;
+console.log(z);
