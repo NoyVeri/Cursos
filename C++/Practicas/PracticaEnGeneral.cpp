@@ -32,5 +32,6 @@ int main(){
 	
 	
 	getch();
+    system("pause");
 	return 0;
 }
