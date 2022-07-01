@@ -48,10 +48,16 @@ z = --c;
 console.log( c );
 console.log( z );
 
-/*Post-decremento (el operador ++ despues de la variable) 
--El valor de una variable aumentara despues de ser asignado a otra variable 
+/*Post-decremento (el operador -- despues de la variable) 
+-El valor de una variable disminuye despues de ser asignado a otra variable 
 
--Siendo que si 'b' tiene un '1' despues de ser almacenada en otra variable este sera '2'
+-Siendo que si 'b' tiene un '2' despues de ser almacenada en otra variable este sera '1'
 
--es decir que si 'b' tiene el valor de '1' este aumentara DESPUES de ser asignado a 'z' 
+-es decir que si 'b' tiene el valor de '2' este disminuye DESPUES de ser asignado a 'z' 
 */
+console.log( d );
+
+z = d--;
+
+console.log( d );
+console.log( z );
