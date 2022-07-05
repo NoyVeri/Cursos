@@ -19,13 +19,16 @@ console.log( z );
 z = a * ( b + c );
 console.log( z );
 
-// Segundo rango se encuentran los incrementos o decrementos
+// Segundo rango se encuentran los incrementos o decrementos ( ++, -- )
 
 z = a + --b;
 console.log ( z );
 
-// Tercer rango se encuentran los operadores de multipliacion, divicion y modulo
+// Tercer rango se encuentran los operadores de multipliacion, divicion y modulo ( *, /, % )
 b = ++b;
- 
+
 z = a + b * c;
 console.log( z );
+
+//Cuarto rango se encuentra la adiccion y la substraccion ( + y - )
+
