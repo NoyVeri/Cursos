@@ -24,11 +24,17 @@ console.log( z );
 z = a + --b;
 console.log ( z );
 
-// Tercer rango se encuentran los operadores de multipliacion, divicion y modulo ( *, /, % )
 b = ++b;
+console.log ( b );
+// Tercer rango se encuentran los operadores de multipliacion, divicion y modulo ( *, /, % )
+
 
 z = a + b * c;
 console.log( z );
 
 //Cuarto rango se encuentra la adiccion y la substraccion ( + y - )
 
+z = a + c;
+console.log( z );
+
+//Nota: todavia hay mas rango solo se añadieron los basicos UwU
