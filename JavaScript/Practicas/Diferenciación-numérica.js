@@ -1,5 +1,7 @@
-/*Diferenciación numericas con diferenciacion:
-
+/*Diferenciación numéricas con diferenciación:
+-Diferenciacion hacia adelante
+-Diferenciacion hacia atras
+-Diferenciacion centrada
 
 */
 const xi_2 = 0, xi_1 = 0.25, xi = 0.5, xi1 = 0.75, xi2 = 1;
