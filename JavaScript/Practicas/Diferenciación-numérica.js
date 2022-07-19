@@ -16,3 +16,10 @@ console.log( 'La diferencia hacia atras es: ' , derivada_F );
 
 Et = (( valorVerdadero - derivada_F ) / valorVerdadero) * 100 ;
 console.log( 'El error relativo porcentual es:', Et , "%" );
+
+// Diferencia centrada O(h4)
+derivada_F = ( -fxi2 + 8 * fxi1 - 8 * fxi_1 + fxi_2) / ( 12 * xi_1);
+console.log( 'La diferencia centrada es: ' , derivada_F );
+
+Et = ((( valorVerdadero - derivada_F ) / valorVerdadero) * 100) * -1;
+console.log( 'El error relativo porcentual es:', Et , "%" );
