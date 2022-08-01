@@ -11,6 +11,5 @@ for (i = 0; i <= 4; i++){
 
     Et = ((formu - Xi) / formu)*100;
     Xi = formu;
-    console.log( "Resultado de la raíz",formu,"porcentaje de errro", Et,"%" );
-    
+    console.log( "Resultado de la raíz",formu,"porcentaje de erro", Et,"%" ); 
 }
