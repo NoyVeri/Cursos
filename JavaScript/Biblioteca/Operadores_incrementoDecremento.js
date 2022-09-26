@@ -26,7 +26,7 @@ console.log( z );
 */
 console.log(b);
 
-z = b ++;
+z = b++;
 
 console.log(b);
 console.log(z);
