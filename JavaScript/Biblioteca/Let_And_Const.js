@@ -11,4 +11,4 @@ console.log( nombre);
 Esta misma constante una vez declarada "NO SE PUEDE CAMBIAR"
 */
 const apodo = 'elpepe';
-console.log(apodo);
+console.log( apodo );
