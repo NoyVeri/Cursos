@@ -29,3 +29,11 @@ console.log( a );
 a = 2;
 a **= 4;
 console.log( a );
+//Sexto tipo "+=" sirve para sumar un valor a la variable
+a = 2;
+a += 2;
+console.log( a );
+//Septimo tipo "-=" sirve para restar un valor a un variable
+a = 4;
+a -= 1;
+console.log( a );
