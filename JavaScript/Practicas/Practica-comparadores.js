@@ -10,7 +10,7 @@ switch (a == d){
 console.log("que rico la mamas chvo");
  break;
  case a !== d:
-    console.log("a mamonsito el pibe");
+    console.log("Es un char el valor de d cuyo valor es", d);
     a += 1;
     break;
 
