@@ -1,9 +1,4 @@
-<!DOCTYPE >
-<html>
-<head>
-  <title>Mi primera página con estilo</title>
-  <style type="text/css">
-  body {
+body {
     padding-left: 11em;
     font-family: Georgia, "Times New Roman",
           Times, serif;
@@ -35,10 +30,3 @@
     margin-top: 1em;
     padding-top: 1em;
     border-top: thin dotted }
-  </style>
-</head>
-<body>
-
-</body>
-    
-</html>
