@@ -1,7 +1,15 @@
 import java.util.Scanner;
+/**ejercicio de Recursion de dos numeros 
+ * @author Manuel Dominguez
+ */
 public class Recursion{
       Scanner dato = new Scanner(System.in);
-
+/**Se crea la variable donde se va almacenar los datos que necesitamos para hacer la suma de recursion
+ * mediante if y un bucle mostramos los resultados de esas sumas
+ * 
+ * @param a se almacena el valor que va tener a
+ * @param b se almacena el valor que va tener b
+ */
      public void suma(int a, int b){
         System.out.println("Digame el valor que tiene a: ");
 		  a = dato.nextInt(); 
@@ -32,7 +40,10 @@ public class Recursion{
 
 
 
-
+/**
+ * mediante la clase ejercicio creamos una tabla para llamar a suma
+ * @param arg
+ */
 
     public static void main(String[]arg){
       Recursion tabla = new Recursion();
