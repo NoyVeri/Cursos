@@ -26,12 +26,6 @@ public class Recursion{
             System.out.println( "Suma"+"("+ a + "," + b + ")" + " es " + al + " ->" + " 1 " + "+ " + al + " == " + sum );
             }
          }
-		/*  for(int f = 1; f <= b;f++){ 
-		 int resul= a * b;  
-		System.out.println(" º "+ f + " + " + a + " = " + resul); 
-        a++;
-        b++;
-		 } */
 		 }
 
 
