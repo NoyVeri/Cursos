@@ -16,7 +16,8 @@ public class Recursion{
             
          }else {
            System.out.println( "--------------------" );
-            for(int w = 0; w <= a; w++){
+           int h = b - 1;
+            for(int w = 0; w <= h; w++){
             
                 b -= 1;
             int sum = a + b;
