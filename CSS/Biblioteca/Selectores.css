@@ -1,0 +1,12 @@
+/*
+
+####SELECTORES####
+
+*/
+/*
+Selector universal "*" se aplica a toda la pagina
+*/
+*{
+
+    color: gray;
+}
