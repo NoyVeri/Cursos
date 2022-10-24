@@ -13,6 +13,8 @@ void menu();
 void insertarLista(Nodo *&, int);
 void mostrarLista(Nodo *);
 void buscarLista(Nodo *,int);
+void eliminarNodo(Nodo *&,int);
+void eliminarLista(Nodo *&, int &);
 
 Nodo *lista = NULL;
 
@@ -31,7 +33,9 @@ cout<<"\t.:MENU:.\n";
 cout<<"1. Insertar elementos a la lista\n";
 cout<<"2. Mostrar los elementos de la lista\n";
 cout<<"3. Buscar un elemento en la lista\n";
-cout<<"4. Salir\n";
+cout<<"4. Eliminar un nodo de la lista\n";
+cout<<"5. Dejar vacia la lista\n";
+cout<<"6. Salir\n";
 cout<<"Opcion\n";
 cin>>opcion;
 
@@ -53,12 +57,27 @@ buscarLista(lista,dato);
 cout<<"\n";
 system("pause");
 break;
+case 4:
 
+cout<<"\nDigite el elemento que desea eliminar: ";
+cin>>dato;
 
+eliminarNodo(lista,dato);
+cout<<"\n";
+system("pause");
+break;
+case 5:
+while(lista != NULL){
+    eliminarLista(lista,dato);
+    cout<<dato<<" -> ";
+}
+cout<<"\n";
+system("pause");
+break;
 
 
 }system("cls");
-}while(opcion != 4);
+}while(opcion != 6);
 
 }
 
@@ -114,3 +133,47 @@ if(band == true){
 
 
 }
+void eliminarNodo(Nodo *&lista,int n){
+    if(lista != NULL){
+        Nodo *aux_borrar;
+        Nodo *anteriror = NULL;
+        aux_borrar = lista;
+
+        while((aux_borrar != NULL) && (aux_borrar->dato != n)){
+anteriror = aux_borrar;
+aux_borrar = aux_borrar->siguiente;
+        }
+
+
+
+        if(aux_borrar == NULL){
+            cout<<"El elemento no ha sido encontrado";
+        }else if(anteriror == NULL){
+            lista = lista->siguiente;
+            delete aux_borrar;
+        }else{
+            anteriror->siguiente = aux_borrar->siguiente;
+            delete aux_borrar;
+        }
+    }
+}
+void eliminarLista(Nodo *&lista,int &n){
+    Nodo * aux = lista;
+    n = aux->dato;
+    lista = aux->siguiente;
+    delete aux;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
