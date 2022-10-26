@@ -24,4 +24,20 @@ console.log( resulta );
 
 //Resultado tipo entero
 
-let
+let vari = 2 < 10 ? 2 : 10;
+
+console.log( vari );
+
+//Nota: se pueden combinar los tipos de resultados como si estubieras imprimiendola en la consola
+
+let va = 2 != 34 ? 2 + " es distinto a " + 34 : 2 + " no es distinto " + 34;
+
+console.log( va );
+
+//Otra forma de ver este operador convinando otros operadores
+let b = 1, a = 5;
+
+let otra = b != 1 && a < 1 || b == 3 ? b + " si es distinto a 0 y " + a + " es menor a 10" : b + " no es distinto a 0 y " + a + " no es menor a 10";
+
+console.log( otra );
+
