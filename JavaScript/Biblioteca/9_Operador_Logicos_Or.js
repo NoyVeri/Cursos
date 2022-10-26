@@ -8,7 +8,7 @@ simbolo para utilizar or es: ||
 */
 let vacaciones = true, diaDescanso = false;
 
-if( vacaciones == true  || diaDescanso == true){
+if( vacaciones == true  || diaDescanso == true ){
 
     console.log( "\t.:Puede faltar al trabajo:.\n" );
 }else{
