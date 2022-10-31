@@ -135,6 +135,22 @@ for(int i = 1; i <= ayu; i++){
 System.out.println( "----------------------------------------------------------" );
       System.out.println( "\t.:¿Desea Hacer otra operacion?, favor de escribir el numero:.\n" + "1.Si\n" + "2.No\n" + "3.Lista de Opreciones" );
 desi = Datos.nextInt();
+switch (desi) {
+    case 1:
+    ayu += desi;
+    new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor(); 
+        break;
+        case 3: 
+        System.out.println( "\n-Suma\n" + "-Resta\n" + "-Multiplicacion\n" + "-Division\n" + "-Residuo\n" + "-Potencia" );
+        ayu ++;
+        break;
+
+    default:
+    System.out.println( "Gracias por Usar el Programa" );
+        break;
+}
+
+/* 
 if(desi == 1){
 
     ayu += desi;
@@ -144,7 +160,7 @@ if(desi == 1){
     
 }else{
     System.out.println( "Gracias por Usar el Programa" );
-}
+}*/
     
 }
 
