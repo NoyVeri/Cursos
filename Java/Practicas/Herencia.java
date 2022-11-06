@@ -37,7 +37,7 @@ this.Promedio = Promedio;
 
 public void DatoAlumno(){
     System.out.println("\t.:Datos del Alumno:.");
-System.out.println("Nombre: " + getNombre() + "\nApellido: " + getApellido() + "\nEdad: " + getEdad() + "\nGrado: " + Grado + "\nPromedio: " + Promedio);
+System.out.println("Nombre: " + getNombre() + "\nApellido: " + getApellido() + "\nEdad: " + getEdad() +" años"+ "\nGrado: " + Grado + "\nPromedio: " + Promedio);
 System.out.println( "-----------------------------------------------------------------" );
 
 }
@@ -57,16 +57,29 @@ this.Escuela = Escuela;
 
 public void DatoMaestro(){
 System.out.println( "\t.:Datos del Maestro:." );
-System.out.println( "Nombre: " + getNombre() + "\nApellido: " + getApellido() + "\nEdad: " + getEdad() + "\nMateria: " + Materia + "\nEscuela: " + Escuela );
+System.out.println( "Nombre: " + getNombre() + "\nApellido: " + getApellido() + "\nEdad: " + getEdad() +" años"+ "\nMateria: " + Materia + "\nEscuela: " + Escuela );
 System.out.println( "-----------------------------------------------------------------" );
 }
 
 }
 
 class Administracion extends Persona{
+private String puestoAdmin;
+private int añosAntiguedad;
+
+public Administracion(int Edad,String Nombre,String Apellido,String puestoAdmin,int añosAntiguedad){
+super(Edad, Nombre, Apellido);
+this.puestoAdmin = puestoAdmin;
+this.añosAntiguedad = añosAntiguedad;
+}
+public void DatoAdministrativo(){
+System.out.println( "\t.:Datos del Administrador:." );
+System.out.println( "Nombre: " + getNombre() + "\nApellido: " + getApellido() + "\nEdad: " + getEdad() +" años"+ "\nPuesto: " + puestoAdmin + "\nAntiguedad: " + añosAntiguedad +" años");
+System.out.println( "-----------------------------------------------------------------" );
 
 
-    
+}
+
 }
 
 
@@ -96,5 +109,8 @@ Maestro maestro = new Maestro(34, "Jesus", "Gonzalez", "Algebra", "Escuela Lopez
 
 maestro.DatoMaestro();
 
+Administracion Admin = new Administracion(34, "Bryan", "Saens", "Gerente", 10);
+
+Admin.DatoAdministrativo();
 }
 }
