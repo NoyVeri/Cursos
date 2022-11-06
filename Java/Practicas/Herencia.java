@@ -63,6 +63,12 @@ System.out.println( "-----------------------------------------------------------
 
 }
 
+class Administracion extends Persona{
+
+
+    
+}
+
 
 
 
