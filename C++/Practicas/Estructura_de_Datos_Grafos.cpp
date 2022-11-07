@@ -3,7 +3,7 @@
 #define Nodo struct nodo
 #define Arista struct arista
 #define Lista struct pila
-
+//estructuras para almacenar los datos que necesitamos 
 Nodo{
 	char dato; 
 	Nodo* siguiente;
@@ -32,14 +32,12 @@ void insertarNodo();
 void agregarArista(Nodo*aux,Nodo*aux2,Arista*nuevo);
 void insertarArista();
 void visualizarGrafo();
-
-
 void insertarPila(Nodo* aux);
 void insertarCola(Nodo* aux);
 Nodo*desencolar();
-void reiniciar();
-void DistanciaCorta();
 
+void DistanciaCorta();
+//informacion que pedimos al usuario para empezar el programa
 int main(){   
     int opcion,N,i;
 	printf("\t.:Ingrese numero de vertices:.\n");
@@ -77,7 +75,7 @@ int main(){
     }while(opcion!=5);
     return 1;
 }
-
+// insertamos a un nodo los datos que necesitamos para poder crear los vertices
 void insertarNodo(){
     Nodo* aux;
 	Nodo* nuevo=(Nodo*)malloc(sizeof(Nodo));
@@ -101,6 +99,7 @@ void insertarNodo(){
  
  }
  
+ //insertamos a los nodos las aristas correspondientes
 void insertarArista(){   
     char ini, fin;
     Arista* nuevo=(Arista*)malloc(sizeof(Arista));
@@ -138,7 +137,7 @@ void insertarArista(){
     if(aux==NULL)
     	printf("Error:Vertice no encontrado\n");
 }
-
+//agrega las aristas que le insertamos a nuestros nodos 
 void agregarArista(Nodo* aux,Nodo* aux2,Arista* nuevo){
     Arista* a;
     if(aux->adyacencia==NULL){   
@@ -152,7 +151,7 @@ void agregarArista(Nodo* aux,Nodo* aux2,Arista* nuevo){
         a->siguiente=nuevo;
     }
 }
-
+//imprime el grafo a la terminal
 void visualizarGrafo(){
     Nodo*aux=inicio;
     Arista* ar;
@@ -172,6 +171,7 @@ void visualizarGrafo(){
     }
     printf("\n");
 }
+//insertamos los datos a una pila mediante una lista
 void insertarPila(Nodo* aux){
 	Lista*nuevo=(Lista*)malloc(sizeof(Lista));
 	nuevo->dato=aux;
@@ -184,7 +184,7 @@ void insertarPila(Nodo* aux){
 	   ini=nuevo;    	
 	}
 }
-
+//insertamos los datos a una cola mediante una lista
 void insertarCola(Nodo*aux){
 	Lista*nuevo=(Lista*)malloc(sizeof(Lista));
 	nuevo->dato=aux;
@@ -197,7 +197,7 @@ void insertarCola(Nodo*aux){
 		final=nuevo;
 	}
 }
-
+//quita datos de la estructura de datos cola
 Nodo*desencolar(){
 	Lista*aux;
 	if(ini==NULL){
@@ -214,16 +214,7 @@ Nodo*desencolar(){
 	return resultado;
 }
 
-void reiniciar(){
-	if(inicio!=NULL){
-		Nodo*aux=inicio;
-		while(aux!=NULL){
-			aux->visitado=aux->terminado=0;
-		    aux=aux->siguiente;
-		}
-	}
-}
-
+// comprueba que distancia es la menor dependiendo de el punto de origen que demos
 void DistanciaCorta(){
 	Nodo*aux=inicio;
 	char a,b;
@@ -287,5 +278,5 @@ void DistanciaCorta(){
     printf("Fin"); 
     
 		printf("\n");
-	reiniciar();
+	
 }
