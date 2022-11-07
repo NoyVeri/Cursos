@@ -210,8 +210,7 @@ void recorridos(){
 	 }
    }
 }
-// 0407 Contraseña de MemoLey
-// 1-0 Contraseña de internet
+
 void recorridoAnchura(){
 	Nodo*aux=desencolar();
 	if(aux==NULL)
@@ -298,7 +297,7 @@ void reiniciar(){
 		}
 	}
 }
-//Lorem Ipsum 
+
 void dijkstra(){
 	Nodo*aux=inicio;
 	char a,b;
