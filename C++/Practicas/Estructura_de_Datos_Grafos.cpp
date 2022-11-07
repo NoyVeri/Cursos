@@ -276,13 +276,15 @@ void DistanciaCorta(){
 		}
 	}
 	insertarPila(aux);
+    
 	while(ini!=NULL){
         
 		printf("%c ",desencolar()->dato);
         printf(" -> "); 
+       
 	}
-    while (ini == NULL)
     
+    printf("Fin"); 
     
 		printf("\n");
 	reiniciar();
