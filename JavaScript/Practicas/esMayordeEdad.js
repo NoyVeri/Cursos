@@ -1,4 +1,4 @@
-//Programa para saber si una persona es mayor de edad
+//Programa para saber si una persona es mayor de edad.
 let persona = 18, Adulto = 18, minimoParaserAdulto = 17.60;
 
 
