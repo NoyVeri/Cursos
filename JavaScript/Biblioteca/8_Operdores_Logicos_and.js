@@ -36,3 +36,10 @@ if( b >= valorMinimo && b <= valorMaximo ){
         console.log( "No entra en el rango" );
         
         }
+        switch(1 != 0 && 2 != 0 && 1 != 41){
+            case true:
+                console.log("pues si es ");
+            break;
+            default:
+        break;
+        }
