@@ -58,4 +58,5 @@ let fila1 = {
 
     fila1.i = fila1.i - 2*fila2.i + fila3.i;
     console.log( "El valor de X es :",fila1.i )
-   
+   //otra forma de imprimir valores de un objeto
+    console.log(fila1['y']);
