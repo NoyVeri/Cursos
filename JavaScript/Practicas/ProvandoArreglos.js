@@ -22,5 +22,7 @@ Ordenador.forEach(function(elemento,indice, array){
     console.log(elemento,indice)
 });
 Ordenador.forEach((elemento,indice) =>{
-    console.log(elemento,indice);
+   if(elemento === 'CPU'){ 
+    console.log('este es un cpu',indice);
+   }
 })
