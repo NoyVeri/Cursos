@@ -17,10 +17,27 @@ console.log(Ordenador[4]);
 
 // para recorrer un arreglo se pueden hace de diversas maneras como son las siguientes
 
-Ordenador.forEach(function(elemento,indice, array){
+Ordenador.forEach(function(element,index, array){
 
-    console.log(elemento,indice)
+    console.log(element,index);
 });
-Ordenador.forEach((elemento,indice, array) =>{
-  console.log(elemento,indice,array)
+
+
+Ordenador.forEach((element,index, array) =>{
+  console.log(element,index);
 });
+
+
+
+  for (let valor of Ordenador){
+   
+    console.log(valor);
+  i = 5;
+  
+  }
+
+  Ordenador.forEach((value) => {
+    console.log(value);
+    
+  });
+  
